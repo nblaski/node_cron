@@ -1,0 +1,22 @@
+<%- include('./partials/header') -%>
+    
+<div class="container-sm" style="padding: 30px">
+    <form id="start" action="/timer/start" method="POST">
+        <h1>Start the timer</h1>
+        <button id="myButton" type="submit" class="btn btn-success">START</button>
+    </form>    
+</div>
+
+<div class="container-sm" style="padding: 30px">
+    <form id="stop" action="/timer/stop" method="POST">
+        <h1>Stop the timer</h1>
+        <button id="myButtonStop" type="submit" class="btn btn-danger">STOP</button>
+    </form>
+</div>
+
+
+<!-- <script src="/js/cron.js"></script> -->
+
+
+
+<%- include('./partials/footer') -%>

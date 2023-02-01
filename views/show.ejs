@@ -1,0 +1,12 @@
+<%- include('./partials/header') -%>
+
+
+<h2>TESTING</h2>
+<h1>STAGE: <%=stage.stageName%></h1>
+<h1>STAGE ID: <%=stage.id%></h1>
+<h1>dateChanged: <%=stage.dateChanged%></h1>
+
+<br>
+<a class="btn btn-warning btn-md" href="/update/<%=stage.id%>" role="button" style="margin: .25em;">UPDATE</a>
+
+<%- include('./partials/footer') -%>

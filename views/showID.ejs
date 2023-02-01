@@ -1,0 +1,18 @@
+<%- include('./partials/header') -%>
+
+
+<form id="stageFormUpdate" action="/update/<%=stage.id%>?_method=PUT" method="POST">
+    <h6 id="stageValue" style="display: inline;"><%= stage.stageName %></h6>
+    <select id="stageUpdate" name="stageUpdate" class="form-select" style="margin-bottom: 10px;">
+        <option id="s0" value="Quoting">Quoting</option>
+        <option id="s1" value="Engineering">Engineering</option>
+        <option id="s2" value="Prepress">Prepress</option>
+      </select>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+
+</form>
+
+<script src="/js/setFields.js"></script>
+
+<%- include('./partials/footer') -%>

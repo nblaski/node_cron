@@ -1,0 +1,21 @@
+<%- include('./partials/header') -%>
+    
+<div class="card" style="width: 18rem; margin: 5em; padding: 20px;">
+
+    <form id="stageForm" action="/stageForm" method="POST">
+        <select id="stageName" name="stageName" class="form-select" style="margin-bottom: 10px;" aria-label="Default select example">
+            <!-- <option selected>Open this select menu</option> -->
+            <option value="Quoting">Quoting</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Prepress">Prepress</option>
+          </select>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+   
+
+</div>
+<a href="/timer" class="btn btn-primary">TIMER</a>
+
+<%- include('./partials/footer') -%>
